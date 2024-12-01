@@ -5,7 +5,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 
 const AddProduct = () => {
-  const url = "https://e-commerce-backend-8s1b.onrender.com";
+  const url = "https://e-commerce-backend-et2s.onrender.com";
 
   const [image, setImage] = useState(false);
 

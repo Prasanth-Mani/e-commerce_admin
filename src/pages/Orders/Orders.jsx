@@ -9,7 +9,7 @@ const Orders = () => {
 
    const fetchAllOrders = async () => {
      try {
-       const response = await axios.get('https://e-commerce-backend-8s1b.onrender.com/api/order/list');
+       const response = await axios.get('https://e-commerce-backend-et2s.onrender.com/api/order/list');
        if (response.data.success) {
          setOrders(response.data.data);
        } else {
@@ -22,7 +22,7 @@ const Orders = () => {
 
    const statusHandler = async (event, orderId) => {
      console.log(event, orderId)
-     const response = await axios.post('https://e-commerce-backend-8s1b.onrender.com/api/order/status', {
+     const response = await axios.post('https://e-commerce-backend-et2s.onrender.com/api/order/status', {
        orderId,
        status: event.target.value
      })
@@ -114,7 +114,7 @@ const Orders = () => {
                     
                      {item.image && (
                        <img
-                         src={`https://e-commerce-backend-8s1b.onrender.com/images/${item.image}`}
+                         src={`https://e-commerce-backend-et2s.onrender.com/images/${item.image}`}
                          alt={item.name}
                          style={styles.productImage}
                        />
